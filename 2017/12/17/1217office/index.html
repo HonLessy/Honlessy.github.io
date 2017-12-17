@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.3" rel="stylesheet" type="text/css" />
+
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.ico?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16.ico?v=5.1.3">
+
+
+
+
+
+
+  <meta name="keywords" content="honlessy" />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="前言号外！号外！我的博客开通了留言功能，如果同学们以后有问题可以直接在下方留言哟！  上次的修改参考文献格式的操作不知道各位学会了吗？ps：如果没有学会可以记住我的网址honlessy.cn随时可以查阅~  另：上次修改参考文献格式还剩最后一点忘记了~今天补上  就是这个：去除“参考文献”下方的横线~">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Word快速排版及自动生成目录">
+<meta property="og:url" content="http://yoursite.com/2017/12/17/1217office/index.html">
+<meta property="og:site_name" content="小弘">
+<meta property="og:description" content="前言号外！号外！我的博客开通了留言功能，如果同学们以后有问题可以直接在下方留言哟！  上次的修改参考文献格式的操作不知道各位学会了吗？ps：如果没有学会可以记住我的网址honlessy.cn随时可以查阅~  另：上次修改参考文献格式还剩最后一点忘记了~今天补上  就是这个：去除“参考文献”下方的横线~">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://yoursite.com/2017/12/17/1217office/2.png">
+<meta property="og:image" content="http://yoursite.com/2017/12/17/1217office/1.png">
+<meta property="og:image" content="http://yoursite.com/2017/12/17/1217office/3.png">
+<meta property="og:image" content="http://yoursite.com/2017/12/17/1217office/4.png">
+<meta property="og:image" content="http://yoursite.com/2017/12/17/1217office/5.png">
+<meta property="og:image" content="http://yoursite.com/2017/12/17/1217office/6.png">
+<meta property="og:image" content="http://yoursite.com/2017/12/17/1217office/7.png">
+<meta property="og:image" content="http://yoursite.com/2017/12/17/1217office/8.png">
+<meta property="og:image" content="http://yoursite.com/2017/12/17/1217office/9.png">
+<meta property="og:image" content="http://yoursite.com/2017/12/17/1217office/10.png">
+<meta property="og:image" content="http://yoursite.com/2017/12/17/1217office/11.png">
+<meta property="og:image" content="http://yoursite.com/2017/12/17/1217office/12.jpg">
+<meta property="og:image" content="http://yoursite.com/2017/12/17/1217office/13.jpg">
+<meta property="og:image" content="http://yoursite.com/2017/12/17/1217office/14.png">
+<meta property="og:image" content="http://yoursite.com/2017/12/17/1217office/15.png">
+<meta property="og:image" content="http://yoursite.com/2017/12/17/1217office/16.jpg">
+<meta property="og:image" content="http://yoursite.com/2017/12/17/1217office/17.png">
+<meta property="og:image" content="http://yoursite.com/2017/12/17/1217office/18.png">
+<meta property="og:image" content="http://yoursite.com/2017/12/17/1217office/19.png">
+<meta property="og:image" content="http://yoursite.com/2017/12/17/1217office/20.png">
+<meta property="og:image" content="http://yoursite.com/2017/12/17/1217office/21.png">
+<meta property="og:image" content="http://yoursite.com/2017/12/17/1217office/22.png">
+<meta property="og:image" content="http://yoursite.com/2017/12/17/1217office/23.png">
+<meta property="og:image" content="http://yoursite.com/2017/12/17/1217office/24.png">
+<meta property="og:image" content="http://yoursite.com/2017/12/17/1217office/25.png">
+<meta property="og:image" content="http://yoursite.com/2017/12/17/1217office/26.png">
+<meta property="og:image" content="http://yoursite.com/2017/12/17/1217office/27.png">
+<meta property="og:image" content="http://yoursite.com/2017/12/17/1217office/28.png">
+<meta property="og:image" content="http://yoursite.com/2017/12/17/1217office/29.png">
+<meta property="og:image" content="http://yoursite.com/2017/12/17/1217office/30.png">
+<meta property="og:image" content="http://yoursite.com/2017/12/17/1217office/31.png">
+<meta property="og:image" content="http://yoursite.com/2017/12/17/1217office/32.png">
+<meta property="og:image" content="http://yoursite.com/2017/12/17/1217office/33.png">
+<meta property="og:image" content="http://yoursite.com/2017/12/17/1217office/34.png">
+<meta property="og:updated_time" content="2017-12-17T13:21:21.640Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Word快速排版及自动生成目录">
+<meta name="twitter:description" content="前言号外！号外！我的博客开通了留言功能，如果同学们以后有问题可以直接在下方留言哟！  上次的修改参考文献格式的操作不知道各位学会了吗？ps：如果没有学会可以记住我的网址honlessy.cn随时可以查阅~  另：上次修改参考文献格式还剩最后一点忘记了~今天补上  就是这个：去除“参考文献”下方的横线~">
+<meta name="twitter:image" content="http://yoursite.com/2017/12/17/1217office/2.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.3',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2017/12/17/1217office/"/>
+
+
+
+
+
+  <title>Word快速排版及自动生成目录 | 小弘</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">小弘</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/17/1217office/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="小弘">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/upload/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小弘">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Word快速排版及自动生成目录</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-17T19:54:13+08:00">
+                2017-12-17
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/office/" itemprop="url" rel="index">
+                    <span itemprop="name">office</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-comment-o"></i>
+              </span>
+              
+                <a href="/2017/12/17/1217office/#SOHUCS" itemprop="discussionUrl">
+                  <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="2017/12/17/1217office/" itemprop="commentsCount"></span>
+                </a>
+              
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p><strong>号外！号外！我的博客开通了留言功能，如果同学们以后有问题可以直接在下方留言哟！</strong></p>
+<p> 上次的修改参考文献格式的操作不知道各位学会了吗？<small>ps：如果没有学会可以记住<a href="honlessy.cn">我的网址</a>honlessy.cn</small>随时可以查阅~</p>
+<p> 另：上次修改参考文献格式还剩最后一点忘记了~今天补上</p>
+<p> 就是这个：去除“参考文献”下方的横线~<br> <a id="more"></a></p>
+<p><strong>修改前</strong>：</p>
+<p> <img src="/2017/12/17/1217office/2.png" alt="2"></p>
+<p><strong>修改后</strong>：</p>
+<p><img src="/2017/12/17/1217office/1.png" alt="1"></p>
+<h2 id="1-去除参考文献下方的横线"><a href="#1-去除参考文献下方的横线" class="headerlink" title="1. 去除参考文献下方的横线"></a>1. 去除参考文献下方的横线</h2><p> <strong>首先</strong>，我们要将word调整到“视图窗口”，找到“草稿”视图：</p>
+<p><img src="/2017/12/17/1217office/3.png" alt="3"></p>
+<p> 选中“草稿视图之后”，word就会变成这样：</p>
+<p><img src="/2017/12/17/1217office/4.png" alt="4"></p>
+<p><strong>接下来</strong>，我们打开“引用窗口”，单击“显示备注”按钮：</p>
+<p><img src="/2017/12/17/1217office/5.png" alt="5"></p>
+<p>之后会变成这样：</p>
+<p><img src="/2017/12/17/1217office/6.png" alt="6"></p>
+<p><strong>之后</strong>我们看到左下方</p>
+<p><img src="/2017/12/17/1217office/7.png" alt="7"></p>
+<p><strong>然后</strong>选中“尾注分隔符”</p>
+<p><img src="/2017/12/17/1217office/8.png" alt="8"></p>
+<p>马上就要结束啦！我们将下方这条细一点的横线删除掉：</p>
+<p><img src="/2017/12/17/1217office/9.png" alt="9"></p>
+<p>完美！这个时候我们回到视图页面，调回我们的“页面视图”</p>
+<p><img src="/2017/12/17/1217office/10.png" alt="10"></p>
+<p>接下来就是见证奇迹的时刻~</p>
+<p><img src="/2017/12/17/1217office/11.png" alt="11"></p>
+<p>美滋滋~这样的参考文献我就不信老师还要喷我！</p>
+<p><img src="/2017/12/17/1217office/12.jpg" alt="12"></p>
+<h1 id="Word操作"><a href="#Word操作" class="headerlink" title="Word操作"></a>Word操作</h1><p>今天主要分享的，是word的快速排版和自动生成目录~</p>
+<p>同学，是不是很羡慕别人的word打开就有齐全的导航窗格，想跳到文档中的哪儿就跳到文档中的哪儿？</p>
+<p>是不是在翻看自己的读书笔记的时候还在一行一行往下滚动？</p>
+<p><img src="/2017/12/17/1217office/13.jpg" alt="13"></p>
+<p>为什么别人的word都是这样的！</p>
+<p><img src="/2017/12/17/1217office/14.png" alt="14"></p>
+<p>而我自己的却是：</p>
+<p><img src="/2017/12/17/1217office/15.png" alt="15"></p>
+<p>。。。</p>
+<p>为什么同一个世界却不是同一个word！我是不是用了假的word！！</p>
+<p><img src="/2017/12/17/1217office/16.jpg" alt="16"></p>
+<p>不用担心~今天我们就来解决这个问题~</p>
+<h2 id="操作"><a href="#操作" class="headerlink" title="操作"></a>操作</h2><p>其实word自动生成导航窗格是依据word自身的样式排版进行的，就是：</p>
+<p><img src="/2017/12/17/1217office/17.png" alt="17"></p>
+<p>很多人把这个样式表里面的“标题1”、“标题2”理解成了题目，但是实际上，这所谓的“标题1”、“标题2”实际上就是我们文章中的<strong>一级标题</strong>、<strong>二级标题</strong>···,而我们在书写word文章的时候肯定是会对一级标题、二级标题等进行格式要求的，所以我们可以通过修改这里，来实现统整文章中的所有标题和小标题，而且，word左边的导航窗格和自动生成目录都是依据这个地方来进行的~</p>
+<p>接下来我们从一个空白文档开始演示：</p>
+<p><img src="/2017/12/17/1217office/18.png" alt="18"></p>
+<h2 id="word快速排版"><a href="#word快速排版" class="headerlink" title="word快速排版"></a>word快速排版</h2><p>一般的，我们刚刚新建一个word文档之后，默认的就是这样的页面，如果没有左边的导航窗格也不用担心，之后我们会提到如何开启导航窗格。假设我们现在要开始写一篇论文，总共有三个一级标题，每个一级标题下属两个二级标题，每个二级标题下属两个三级标题：</p>
+<p>文章结构应该是这样：</p>
+<p><img src="/2017/12/17/1217office/19.png" alt="19"></p>
+<p><small>注：在各标题下方可以任意添加正文</small></p>
+<p>我们可以看到，左边的导航窗格并没有出现文章结构，于是，操作开始了</p>
+<p><img src="/2017/12/17/1217office/20.png" alt="20"></p>
+<p>我们在最上方的样式窗格里面找到标题1、标题2、标题等，以标题1为例，右键单击标题1，</p>
+<p><img src="/2017/12/17/1217office/21.png" alt="21"></p>
+<p>选中<code>修改</code>按钮，我们就可以看到这样的弹出窗口：</p>
+<p><img src="/2017/12/17/1217office/22.png" alt="22"></p>
+<p>现在假设我们的论文要求一级标题中文用宋体三号加粗并且居左，于是我们在格式中将文字格式进行修改：</p>
+<p><img src="/2017/12/17/1217office/23.png" alt="23"></p>
+<p>然后点击确定。。。</p>
+<p>好像什么都没有发生。。。</p>
+<p>其实我们还剩下最后一步，就是选中一级标题之后，再左键单击标题1：</p>
+<p><img src="/2017/12/17/1217office/24.png" alt="24"></p>
+<p>之后我们就可以发现，这个一级标题发生了变化！同时导航窗格也出现了一级标题!!</p>
+<p><img src="/2017/12/17/1217office/25.png" alt="25"></p>
+<p>于是我们接下来分别选中剩下的一级标题，然后选择标题1：</p>
+<p><img src="/2017/12/17/1217office/26.png" alt="26"></p>
+<p>所以对待二级标题和三级标题都是同样的操作，其中的不同只在于按照格式要求调整他们的文字格式，在这里我们假设二级标题要求宋体四号加粗，三级标题要求宋体小四加粗，都居左：</p>
+<p><img src="/2017/12/17/1217office/27.png" alt="27"></p>
+<p><img src="/2017/12/17/1217office/28.png" alt="28"></p>
+<p>然后分别应用到正文中去：</p>
+<p><img src="/2017/12/17/1217office/29.png" alt="29"></p>
+<p>最后我们可以看到左边的导航窗格已经有了我们的文章结构啦!</p>
+<p>如果在一开始没有弹出导航窗格，请按照以下操作打开导航窗格：先打开<code>视图</code>选项卡，然后选中<code>导航窗格</code></p>
+<p><img src="/2017/12/17/1217office/30.png" alt="30"></p>
+<p>这个时候就完成啦！通常我们使用这个样式功能，是为了快速排版，因为当文章中的标题都是按照这样的格式进行渲染的话，如果之后对于标题的格式有其他要求，只需要调整<code>样式栏</code>中的样式，正文中的所有标题都会按照要求自动进行更改的~</p>
+<h2 id="自动生成目录"><a href="#自动生成目录" class="headerlink" title="自动生成目录"></a>自动生成目录</h2><p>在一开始我们提到今天还有一个自动生成目录的操作~</p>
+<p>其实生成目录真的很简单，只要我们的所有标题都是按照<code>样式表</code>进行渲染的，那么自动生成目录只需要两部操作！</p>
+<p>假设我们在文章开头生成目录：</p>
+<p>那我们只需在文章开始单击回车，给目录留出一个空位，然后打开<code>引用</code>选项卡，在最左边找到<code>目录</code>按钮</p>
+<p><img src="/2017/12/17/1217office/31.png" alt="31"></p>
+<p>单击<code>目录</code>按钮，</p>
+<p><img src="/2017/12/17/1217office/32.png" alt="32"></p>
+<p>往下找到自动目录，单击</p>
+<p><img src="/2017/12/17/1217office/33.png" alt="33"></p>
+<p>大功告成！</p>
+<p><img src="/2017/12/17/1217office/34.png" alt="34"></p>
+<p>这样，我们就自动生成了文章的目录！告别手动键入目录的痛苦</p>
+<p>而且这样的目录还有一个好处，就是当正文中的页码或者标题名称发生了改变的时候，我们不需要重新键入，只需要使用<code>更新域</code>的功能就可以<strong>瞬间</strong>、<strong>马上</strong>、<strong>简单</strong>的改正。</p>
+<p>如果有同学问<code>更新域</code>功能在哪里的话，请看目录上方，有一个<code>更新目录</code>的按钮，点击它，即可更新目录~~</p>
+<h1 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h1><p>今天的内容看起来很多，实际上并不多~我们只需要掌握使用<code>样式表</code>进行标题的排版，剩下的工作，就都可以交给word来进行啦！如果有同学有不明白的地方，可以在文章下方留言，或者微信QQ联系我哟~</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/12/10/1210office/" rel="next" title="Word快速生成参考文献标识">
+                <i class="fa fa-chevron-left"></i> Word快速生成参考文献标识
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="SOHUCS"></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/upload/avatar.gif"
+                alt="小弘" />
+            
+              <p class="site-author-name" itemprop="name">小弘</p>
+              <p class="site-description motion-element" itemprop="description">昔我往矣，杨柳依依</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+
+          </nav>
+
+          
+
+          <div class="links-of-author motion-element">
+            
+              
+                <span class="links-of-author-item">
+                  <a href="https://github.com/honlessy" target="_blank" title="GitHub">
+                    
+                      <i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="mailto:443048317@qq.com" target="_blank" title="E-Mail">
+                    
+                      <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                </span>
+              
+            
+          </div>
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-去除参考文献下方的横线"><span class="nav-number">1.1.</span> <span class="nav-text">1. 去除参考文献下方的横线</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Word操作"><span class="nav-number">2.</span> <span class="nav-text">Word操作</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#操作"><span class="nav-number">2.1.</span> <span class="nav-text">操作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#word快速排版"><span class="nav-number">2.2.</span> <span class="nav-text">word快速排版</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#自动生成目录"><span class="nav-number">2.3.</span> <span class="nav-text">自动生成目录</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#后记"><span class="nav-number">3.</span> <span class="nav-text">后记</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">小弘</span>
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.3"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.3"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.3"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.3"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+  
+    <script type="text/javascript">
+    (function(){
+      var appid = 'cytmlp32e';
+      var conf = '0f9f8edf2bcc55130addfae49416f133';
+      var width = window.innerWidth || document.documentElement.clientWidth;
+      if (width < 960) {
+      window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){
+        window.changyan.api.config({appid:appid,conf:conf})});
+      }
+    })();
+    </script>
+    <script type="text/javascript" src="https://assets.changyan.sohu.com/upload/plugins/plugins.count.js"></script>
+  
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+
+
+  
+
+  
+
+</body>
+</html>
